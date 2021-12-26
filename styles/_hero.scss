@@ -1,0 +1,74 @@
+
+
+.hidden {
+    display: none;
+}
+
+.hero {
+    
+    display: flex;
+    justify-content: space-between;
+    background-color: $colorDarkViolet;
+    padding-left: $paddingX;
+    padding-right: $paddingX;
+    position: relative;
+
+    .img-bg-header {
+        position: absolute;
+        right: 0;
+        z-index: 2;
+
+    }
+    
+}
+
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    padding-right: 3rem;
+    
+    hr {
+        width: 150px;
+        margin-bottom: 70px;
+        margin-top: 104px;
+    }
+    h1 {
+        letter-spacing: 0.3rem;
+        color: white;
+        font-family: $fontHeading;
+        font-size: 7rem;
+        line-height: 90%;
+        font-weight: 300;
+    }
+    p {
+        margin-top: 25px;
+        color: white;
+        font-size: 1.6rem;
+        font-family: $fontBody;
+        line-height: 160%;
+        
+    }
+
+    button {
+        margin-top: 35px;
+        width: 145px;
+        height: 40px;
+        background-color: transparent;
+        border: 1px solid white;
+        color: white;
+        text-transform: uppercase;
+        font-family: $fontBody;
+        font-weight: 700;
+
+        &:hover {
+            background-color: white;
+            color: $colorDarkViolet;
+        }
+    }
+}
+
+
+.hero-img-desktop {
+    transform: translateY(105px);
+    }
+

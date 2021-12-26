@@ -1,0 +1,249 @@
+@media screen and(max-width: 1000px) and (min-width: 650px) {
+
+
+    header {
+        padding-left: 5vh;
+        padding-right: 5vh;
+    }
+    .hero {
+        padding-left: 5vh;
+        padding-right: 5vh;
+
+        .hero-left {
+            h1 {
+                font-size: 7vw;
+            }
+            p {
+                font-size: 1.7vw;
+            }
+        }
+
+        .hero-img-desktop {
+            width: 50vw;
+            
+           
+        }
+
+        .img-bg-header {
+            height: 70%;
+        }
+    }
+
+    .middle-section{
+        padding-left: 5vh;
+        padding-right: 5vh;
+        h2 {
+            font-size: 6vw;
+        }
+    }
+
+    .more-info-container {
+        padding: 40px 40px;
+        h3 {
+            font-size: 4.5vw;
+        }
+    }
+
+    footer {
+        padding-left: 5vh;
+        padding-right: 5vh;
+    }
+
+    
+}
+
+
+@media screen and (max-width: 649px) {
+
+
+
+    header {
+        padding: 2rem 5vw;
+        position: relative;
+        z-index: 100;
+
+    }
+
+    nav {
+
+      
+        
+        ul {        
+            position: absolute;
+            overflow: hidden;
+            top: 72px;
+            left: 0;
+            width: 100vw;
+            height: calc(100vh - 72px);
+            
+            opacity: 0;
+            z-index: 99;
+            padding-top: 4rem;
+            flex-direction: column;
+            justify-content: flex-start;
+            gap: 3rem;
+            background-color: $colorVeryDarkViolet;
+
+
+            li {
+                a {
+                    color: white;
+                    display: none;
+                    font-size: 2rem;
+                    letter-spacing: 0.2rem;
+                    font-weight: 700;
+                    margin: 2rem 0;
+                }
+            }
+
+            .mobile-nav-bg {
+                bottom: 0;
+                width: 100%;
+                
+            }
+        }
+    }
+
+    .special {
+        display: flex;
+        justify-content: center;
+        border-color: white;
+        width: 80vw;
+        a {
+            color: white;
+            
+        }
+    }
+
+    .show-nav {
+        
+        opacity: 1;
+
+        li a {
+            display: flex;
+        }
+        
+    }
+    
+    .hamburger {
+        display: block;
+        right: 0;
+        cursor: pointer;
+        
+    }
+    .hero {
+        flex-direction: column-reverse;
+        padding: 0 0;
+        
+    }
+
+    .hero-img-mobile {
+        width: 100%;
+    }
+
+    .img-mobile {
+        display: block;
+    }
+
+    .img-desktop {
+        display: none;
+    }
+
+
+
+
+    .hero-left {
+        padding: 2rem 5vw;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+        position: relative;
+        
+        h1 {
+            font-size: 5rem;
+        }
+
+        hr {
+            display: none;
+        }
+
+        .img-bg-middle-mob {
+            position: absolute;
+            bottom: -170px;
+            right: 0;
+        }
+        .img-bg-left-top {
+            position: absolute;
+            left: 0;
+            top: 0;
+            
+        }
+            
+        
+    }
+
+    .middle-section {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 200px;
+        padding: 0;
+
+        hr {
+            margin: auto;
+        }
+        h2 {
+            font-size: 5rem;
+            margin-bottom: 50px;
+        }
+
+        .bulletpoint-container {
+            margin: 0 5vw;
+            flex-direction: column;
+            gap: 5rem;
+        }
+
+        .more-info-container {
+            height: 50vh;
+            
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 6rem 5vw;
+            position: relative;
+
+            button {
+                margin-top: 60px;
+            }
+
+            .img-mobile {
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+        }
+    }
+
+
+    footer {
+        padding: 0 5vw;
+    }
+
+    .icons {
+        flex-direction: column;
+
+        .logo {
+            margin-top: 100px;
+            margin-bottom: 30px;
+        }
+        
+    }
+
+    .footer-links {
+        flex-direction: column;
+        text-align: center;
+        gap: 3rem;
+    }
+    
+}
